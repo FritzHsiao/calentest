@@ -14,6 +14,10 @@
 		1F43ECB91FC7C3150039D74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F43ECB71FC7C3150039D74F /* LaunchScreen.storyboard */; };
 		1F43ECC41FC7C3150039D74F /* calentestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43ECC31FC7C3150039D74F /* calentestTests.swift */; };
 		1F43ECCF1FC7C3150039D74F /* calentestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43ECCE1FC7C3150039D74F /* calentestUITests.swift */; };
+		1F43ECDD1FC7C3280039D74F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1F43ECDC1FC7C3280039D74F /* Podfile */; };
+		1FCB3BFE1FDC023E0082F17F /* TodayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB3BFD1FDC023E0082F17F /* TodayResult.swift */; };
+		1FE65B2F1FD69C28004BBFA7 /* newVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE65B2E1FD69C28004BBFA7 /* newVC.swift */; };
+		C9B1CCC73F0BA0FBE9A9F0FB /* Pods_calentest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A756962DD0262D460CC7DE /* Pods_calentest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,12 @@
 		1F43ECCA1FC7C3150039D74F /* calentestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calentestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F43ECCE1FC7C3150039D74F /* calentestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calentestUITests.swift; sourceTree = "<group>"; };
 		1F43ECD01FC7C3150039D74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F43ECDC1FC7C3280039D74F /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1FCB3BFD1FDC023E0082F17F /* TodayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayResult.swift; sourceTree = "<group>"; };
+		1FE65B2E1FD69C28004BBFA7 /* newVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newVC.swift; sourceTree = "<group>"; };
+		37900CCAB651525D4E5F9EA5 /* Pods-calentest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calentest.release.xcconfig"; path = "Pods/Target Support Files/Pods-calentest/Pods-calentest.release.xcconfig"; sourceTree = "<group>"; };
+		37A756962DD0262D460CC7DE /* Pods_calentest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calentest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7547B9AB6EC995C1D8045E07 /* Pods-calentest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calentest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-calentest/Pods-calentest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B1CCC73F0BA0FBE9A9F0FB /* Pods_calentest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032880DF4E6815B0A3BBC10D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37A756962DD0262D460CC7DE /* Pods_calentest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F43ECA21FC7C3150039D74F = {
 			isa = PBXGroup;
 			children = (
+				1F43ECDC1FC7C3280039D74F /* Podfile */,
 				1F43ECAD1FC7C3150039D74F /* calentest */,
 				1F43ECC21FC7C3150039D74F /* calentestTests */,
 				1F43ECCD1FC7C3150039D74F /* calentestUITests */,
 				1F43ECAC1FC7C3150039D74F /* Products */,
+				5DCD5164CB8730F5C596E763 /* Pods */,
+				032880DF4E6815B0A3BBC10D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				1F43ECAE1FC7C3150039D74F /* AppDelegate.swift */,
+				1FCB3BFD1FDC023E0082F17F /* TodayResult.swift */,
 				1F43ECB01FC7C3150039D74F /* ViewController.swift */,
+				1FE65B2E1FD69C28004BBFA7 /* newVC.swift */,
 				1F43ECB21FC7C3150039D74F /* Main.storyboard */,
 				1F43ECB51FC7C3150039D74F /* Assets.xcassets */,
 				1F43ECB71FC7C3150039D74F /* LaunchScreen.storyboard */,
@@ -125,6 +149,15 @@
 			path = calentestUITests;
 			sourceTree = "<group>";
 		};
+		5DCD5164CB8730F5C596E763 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7547B9AB6EC995C1D8045E07 /* Pods-calentest.debug.xcconfig */,
+				37900CCAB651525D4E5F9EA5 /* Pods-calentest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F43ECD31FC7C3150039D74F /* Build configuration list for PBXNativeTarget "calentest" */;
 			buildPhases = (
+				2397D2E0614F757AAA097A5B /* [CP] Check Pods Manifest.lock */,
 				1F43ECA71FC7C3150039D74F /* Sources */,
 				1F43ECA81FC7C3150039D74F /* Frameworks */,
 				1F43ECA91FC7C3150039D74F /* Resources */,
+				B72D64943A1437058D4F87B1 /* [CP] Embed Pods Frameworks */,
+				62F3977A55205A4BE8F4358A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +270,7 @@
 			files = (
 				1F43ECB91FC7C3150039D74F /* LaunchScreen.storyboard in Resources */,
 				1F43ECB61FC7C3150039D74F /* Assets.xcassets in Resources */,
+				1F43ECDD1FC7C3280039D74F /* Podfile in Resources */,
 				1F43ECB41FC7C3150039D74F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +291,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2397D2E0614F757AAA097A5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calentest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62F3977A55205A4BE8F4358A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-calentest/Pods-calentest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B72D64943A1437058D4F87B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-calentest/Pods-calentest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-calentest/Pods-calentest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F43ECA71FC7C3150039D74F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1F43ECB11FC7C3150039D74F /* ViewController.swift in Sources */,
+				1FE65B2F1FD69C28004BBFA7 /* newVC.swift in Sources */,
 				1F43ECAF1FC7C3150039D74F /* AppDelegate.swift in Sources */,
+				1FCB3BFE1FDC023E0082F17F /* TodayResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +517,7 @@
 		};
 		1F43ECD41FC7C3150039D74F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7547B9AB6EC995C1D8045E07 /* Pods-calentest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +533,7 @@
 		};
 		1F43ECD51FC7C3150039D74F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37900CCAB651525D4E5F9EA5 /* Pods-calentest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
